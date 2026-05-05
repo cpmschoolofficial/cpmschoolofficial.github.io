@@ -1,10 +1,10 @@
 // ================= MENU =================
-function toggleMenu() {
-  const menu = document.getElementById("navMenu");
-  if (menu) {
-    menu.classList.toggle("show");
-  }
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
 }
+</script>
 
 // ================= STUDENT POPUP =================
 function openStudent(el) {
