@@ -331,10 +331,20 @@ As we continue to grow, our vision remains clear: to build a world where no chil
 </a>
 <script src="js/script.js"></script>
 
-   <function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
-  document.querySelector(".menu-overlay").classList.toggle("active");
+   <script>
+function toggleMenu(){
+  var menu = document.getElementById("navMenu");
+  var overlay = document.querySelector(".menu-overlay");
+
+  if(menu && overlay){
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  } else {
+    console.log("Menu elements not found");
+  }
 }
+</script>
+  
   
 </body>
 </html>
