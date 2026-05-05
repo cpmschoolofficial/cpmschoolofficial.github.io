@@ -15,8 +15,8 @@
       <img src="images/logo.jpg">
       <h3>Christian Public Model School</h3>
     </div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <div class="menu-overlay" onclick="toggleMenu()"></div>
 
 <ul id="navMenu">
@@ -216,6 +216,19 @@
 <a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
   <img src="images/whatsapp.png">
 </a>
+  <script>
+function toggleMenu(){
+  var menu = document.getElementById("navMenu");
+  var overlay = document.querySelector(".menu-overlay");
+
+  if(menu && overlay){
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  } else {
+    console.log("Menu elements not found");
+  }
+}
+</script>
   
 </body>
 </html>
