@@ -97,3 +97,7 @@ function prevSlide(){
 }
 
 setInterval(nextSlide, 4000);
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
