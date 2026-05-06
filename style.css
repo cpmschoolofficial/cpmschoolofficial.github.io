@@ -639,3 +639,64 @@ section{
     display:block;
   }
 }
+/* SLIDER FIX */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* IMAGE */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.slide::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+
+/* CONTENT ABOVE IMAGE */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* THIS FIXES BUTTON DISAPPEAR */
+  text-align: center;
+  color: white;
+}
+
+/* BUTTON STYLE (VISIBLE + PREMIUM) */
+.slide-content .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#ff9800,#ff5722);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.slide-content .btn:hover {
+  transform: translateY(-3px);
+}
