@@ -556,3 +556,94 @@ section{
 .donation-hero{
   background: url('images/donation.jpg') center/cover no-repeat;
 }
+/* =========================
+   DONATION PAGE FIX
+========================= */
+
+/* HERO FIX */
+.donation-hero{
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+              url("images/donation-hero.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content h1{
+  font-size: 38px;
+}
+
+.hero-content p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* PAYMENT BOX */
+.payment-box{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  margin:20px auto;
+  max-width:400px;
+  text-align:center;
+}
+
+/* =========================
+   WHATSAPP FIX (SMALL + CLEAN)
+========================= */
+.whatsapp img{
+  width:50px;
+  height:50px;
+}
+
+/* =========================
+   LOGO FIX (DONATION PAGE)
+========================= */
+.logo img{
+  width:45px;
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+@media(max-width:768px){
+
+  /* HERO MOBILE */
+  .donation-hero{
+    height: 55vh;
+    padding: 20px;
+  }
+
+  .hero-content h1{
+    font-size: 24px;
+  }
+
+  .hero-content p{
+    font-size: 14px;
+  }
+
+  /* PAYMENT BOX MOBILE */
+  .payment-box{
+    width: 90%;
+    padding:20px;
+  }
+
+  /* BUTTON */
+  .donate-btn{
+    padding:12px 25px;
+    font-size:14px;
+  }
+
+  /* FIX MENU OVERLAY BLOCKING */
+  .menu-overlay{
+    display:none;
+  }
+
+  .menu-overlay.active{
+    display:block;
+  }
+}
