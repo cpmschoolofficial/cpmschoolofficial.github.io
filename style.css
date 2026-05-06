@@ -470,3 +470,17 @@ section{
   height:50px;
   border-radius:50%;
 }
+.donation-hero{
+  height:60vh;
+  background:url('images/children.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.logo img{
+  width:50px;
+}
+
+.whatsapp img{
+  width:55px;
+  height:55px;
+}
